@@ -1,6 +1,5 @@
 
 function TodoForm({ inputText, setInputText, todos, setTodos }) {
-  console.log(todos)
   function handleInput(e) {
     setInputText(e.target.value);
   }

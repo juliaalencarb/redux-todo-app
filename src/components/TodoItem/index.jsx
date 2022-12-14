@@ -1,7 +1,7 @@
-function TodoItem() {
+function TodoItem({todo}) {
 	return(
 		<li className="todo">
-		    <span className="todo-item">Todo</span>
+		    <span className="todo-item">{todo.text}</span>
 		</li>
 	)
 	}
