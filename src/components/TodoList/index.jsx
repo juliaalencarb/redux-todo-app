@@ -19,7 +19,9 @@ function TodoList({ todos, setTodos }) {
 
 	return (
 		<div className="todo-container">
-			<ul className="todo-list">{todos.map((todo, i) => <TodoItem todo={todo} deleteTodo={deleteTodo} completeTodo={completeTodo} key={i} />)}</ul>
+			<ul className="todo-list">
+				{todos.map((todo, i) => <TodoItem todo={todo} deleteTodo={deleteTodo} completeTodo={completeTodo} key={i} />)}
+			</ul>
 		</div>
 	)
 }

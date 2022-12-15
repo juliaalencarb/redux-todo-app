@@ -10,12 +10,13 @@ function TodoForm({ inputText, setInputText, todos, setTodos }) {
      ...todos,
      {text: inputText, completed: false}
     ])
+    setInputText('')
   }
     
   return (
     <form>
-        <input type="text" className="todo-input" onChange={handleInput} />
-		<button type="submit" className="todo-button" onClick={handleSubmit}>Add</button>
+      <input value={inputText} type="text" className="todo-input" onChange={handleInput} />
+      <button type="submit" className="todo-button" onClick={handleSubmit}>Add</button>
     </form>
   )
 }
