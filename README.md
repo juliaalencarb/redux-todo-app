@@ -8,4 +8,4 @@ Some example React code to help teach people React File Structure & Props
 - `npm install`
 - `npm run dev`
 
-This repo contains the completed code for the React Props lecture
+This repo contains the complete code for the React File Structure & Props lecture
