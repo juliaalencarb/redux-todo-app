@@ -14,8 +14,12 @@ To access a resource, switch to the relevant branch and read [`instructions.md`]
 
 | Resource | Branch |
 | --- | --- |
+| Intro to React starter code | `react-spa-starter` |
 | React Props starter code | `react-props-starter` |
 | React Props completed code | `react-props-completed` |
+| React useEffect starter code | `react-useEffect-starter` |
+| React useEffect completed code | `react-useEffect-completed` |
+| React useEffect examples | `react-useEffect-examples` |
 | React Navigation starter code | `react-navigation-starter` |
 | React Navigation completed code | `react-navigation-completed` |
 | React Testing starter code | `react-testing-starter` |
@@ -24,9 +28,4 @@ To access a resource, switch to the relevant branch and read [`instructions.md`]
 | React useContext completed code | `react-useContext-completed` |
 | Redux starter code | `redux-starter` |
 | Redux completed code | `redux-completed` |
-| React Native Core Components examples & brief | `react-native-core-components` |
-| React Native Navigation examples & brief | `react-native-navigation` |
-| React Native Expo SDK examples & brief | `react-native-expo-sdk` |
-| Multiplatform Development Brief | `multi-platform-development-brief` |
-
-
+| React end to end project | `react-end-to-end-project-completed` |
