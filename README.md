@@ -10,7 +10,7 @@ Begin by **cloning** this repository onto your machine.
 
 Each separate resource is stored on a different branch of this repository.
 
-To access a resource, switch to the relevant branch and read [`instructions.md`](./instructions.md) for details.
+To access a resource, switch to the relevant branch.
 
 | Resource | Branch |
 | --- | --- |
