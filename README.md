@@ -1,4 +1,4 @@
-# React Props
+# React Props (completed)
 
 Some example React code to help teach people React File Structure & Props
 
