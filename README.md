@@ -29,3 +29,4 @@ To access a resource, switch to the relevant branch.
 | Redux starter code | `redux-starter` |
 | Redux completed code | `redux-completed` |
 | React end to end project | `react-end-to-end-project-completed` |
+| React end to end project - without extensions | `react-end-to-end-project-completed-without-extensions` |
