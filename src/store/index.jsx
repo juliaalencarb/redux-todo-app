@@ -1,26 +1,22 @@
-import { legacy_createStore, combineReducers } from 'react-redux';
+import { legacy_createStore } from 'redux';
 
-// store
-const reducers = combineReducers({ inputReducer, todosReducer });
-const store = legacy_createStore(reducers);
+// TODO: create different reducers based on functionality, and use combine reducers function to bundle all of them together.
+// create action-creators to have dispatch functions separated from components. Refer to Money Deposit example.
 
-// reducers
-const inputReducer = (state=( {userInput: ''} ), action) => {
+// reducer
+const todosReducer = (state=( {todos: [], userInput: ""} ), action) => {
     switch (action.type) {
         case 'getInputText':
-            
-            return { userInput: action.payload };
-    
-        default:
-            return state;
-    }
-};
+            return  {...state, userInput: action.payload} 
 
-const todosReducer = (state=( {todos: []} ), action) => {
-    switch (action.type) {
         case 'getTodoList':
-            return [...state.todos, action.payload];
-    
+            return {...state, 
+                todos: [...state.todos, { text: action.payload, completed: false }], 
+                userInput: ""};
+        
+        case 'deleteTodo':
+            return {...state, todos: state.todos.filter(todo => todo !== action.payload)}
+        
         default:
             return state;
     }
@@ -28,5 +24,8 @@ const todosReducer = (state=( {todos: []} ), action) => {
 
 // const [inputText, setInputText] = useState('');
 // const [todos, setTodos] = useState([]);
+// store
+const store = legacy_createStore(todosReducer);
+
 
 export default store;

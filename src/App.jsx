@@ -9,10 +9,13 @@ function App() {
   return (
     <div>
       <header>Sarah's Todo List</header>
-      <TodoForm inputText={inputText} setInputText={setInputText} todos={todos} setTodos={setTodos} />
-      <TodoList todos={todos} setTodos={setTodos} />
+      <TodoForm />
+      <TodoList />
     </div>
   );
 }
 
 export default App;
+
+// inputText={inputText} setInputText={setInputText} todos={todos} setTodos={setTodos}
+// todos={todos} setTodos={setTodos}

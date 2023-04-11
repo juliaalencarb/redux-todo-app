@@ -1,17 +1,31 @@
+import { useSelector, useDispatch } from 'react-redux';
 
-function TodoForm({ inputText, setInputText, todos, setTodos }) {
+function TodoForm() {
+  
+  const dispatch = useDispatch();
+  const inputText = useSelector(state => state.userInput);
+
   function handleInput(e) {
-    setInputText(e.target.value);
-  }
+    dispatch({ type: 'getInputText', payload: e.target.value })
+  }  
+  
+  // function handleInput(e) {
+  //   setInputText(e.target.value);
+  // }
 
   function handleSubmit(e) {
     e.preventDefault();
-    setTodos([
-     ...todos,
-     {text: inputText, completed: false}
-    ])
-    setInputText('')
+    dispatch({ type: 'getTodoList', payload: inputText })
   }
+
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   setTodos([
+  //    ...todos,
+  //    {text: inputText, completed: false}
+  //   ])
+  //   setInputText('')
+  // }
     
   return (
     <form>
@@ -22,3 +36,5 @@ function TodoForm({ inputText, setInputText, todos, setTodos }) {
 }
 
 export default TodoForm;
+
+// { inputText, setInputText, todos, setTodos }
